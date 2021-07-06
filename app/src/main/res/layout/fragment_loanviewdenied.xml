@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.loanviewdenied">
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="EMAIL"
+            android:id="@+id/em"
+            android:textColor="#FF5722" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/am"
+            android:layout_toRightOf="@+id/em"
+            android:text="AMOUNT"
+            android:textColor="#FF5722" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/am"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ti"
+            android:text="TIME(yrs)"
+            android:textColor="#FF5722" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rr1"
+        android:id="@+id/loanrecycle"/>
+</RelativeLayout>

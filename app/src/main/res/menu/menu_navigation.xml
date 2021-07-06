@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/records"
+        android:title="My Records"
+        android:icon="@drawable/ic_weigh"/>
+    <item
+        android:id="@+id/loan"
+        android:title="Loan"
+        android:icon="@drawable/ic_money"/>
+    <item
+        android:id="@+id/shop"
+        android:title="Shop"
+        android:icon="@drawable/ic_shop"/>
+    <item
+        android:id="@+id/messageactivity"
+        android:title="Message"
+        android:icon="@drawable/ic_message"/>
+</menu>

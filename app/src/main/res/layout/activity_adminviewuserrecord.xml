@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".userrecords">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/tt1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_back"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/pic"
+            android:src="@drawable/account1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textColor="#FFC107"
+            android:id="@+id/name"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="records"
+            android:textColor="#FFC107" />
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_below="@+id/tt1"
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="grade1"
+                android:textColor="#F44336" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="wrap_content"
+                android:text="grade2"
+                android:textColor="#F44336" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_marginLeft="13dp"
+                android:layout_height="wrap_content"
+                android:text="Mbuni"
+                android:textColor="#F44336" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#F44336" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Time"
+                android:textColor="#F44336" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/r1"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="520dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TOTAL"
+        android:id="@+id/ttt"
+        android:layout_below="@id/recycleview"
+        android:textAlignment="center"
+        android:textColor="#F44336" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rrrr"
+        android:layout_below="@+id/ttt"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/grade1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="#2196F3" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/grade1"
+            android:id="@+id/grade2"
+            android:textColor="#2196F3"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_toRightOf="@id/grade2"
+            android:layout_height="wrap_content"
+            android:id="@+id/grade3"
+            android:textColor="#2196F3"
+            android:layout_marginLeft="7dp"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_toRightOf="@id/grade3"
+            android:layout_height="wrap_content"
+            android:id="@+id/ttotal"
+            android:textColor="#2196F3"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grade1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="APPROXIMATE INCOME   ="
+            android:textColor="#E91E63" />
+        <TextView
+            android:id="@+id/income1"
+            android:layout_width="150dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/grade1"
+            android:layout_toRightOf="@+id/income"
+            android:hint="Ksh 123456"
+            android:textColor="#2196F3" />
+
+    </RelativeLayout>
+</RelativeLayout>

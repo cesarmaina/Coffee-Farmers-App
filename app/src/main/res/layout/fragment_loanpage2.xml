@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="70dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".fragments.loanpage2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Principal : "
+            android:textColor="#2196F3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="amount"
+            android:id="@+id/amount1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll2"
+        android:layout_below="@id/ll1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Time (Yrs)     :       "
+            android:textColor="#2196F3" />
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_below="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll3"
+        android:layout_below="@id/ll2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Interest Rate p/a  :       "
+            android:textColor="#2196F3" />
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_below="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/interestrate"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll4"
+        android:layout_below="@id/ll3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Annual Interest  :       "
+            android:textColor="#2196F3" />
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_below="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/interest"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll5"
+        android:layout_below="@id/ll4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Total Payment   :       "
+            android:textColor="#2196F3" />
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_below="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalpay"/>
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/ll5"
+        android:layout_width="wrap_content"
+        android:id="@+id/ll6"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll6">
+
+        <Button
+            android:id="@+id/backn"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            android:text="back"
+            android:textColor="#3F51B5" />
+
+        <Button
+            android:id="@+id/applyloan"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/roundcorner"
+            android:text="Apply Loan"
+            android:textColor="#3F51B5" />
+    </LinearLayout>
+</RelativeLayout>

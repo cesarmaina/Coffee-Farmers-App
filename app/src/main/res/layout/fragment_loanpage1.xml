@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.loanpage1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3400BCD4"
+        android:paddingLeft="80dp"
+        android:id="@+id/t1"
+        android:layout_marginTop="50dp"
+        android:text="Loan Application"
+        android:textColor="#F44336" />
+    <TextView
+        android:id="@+id/lt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:text="You can apply a loan 5 times your expected revenue"
+        android:textColor="#00BCD4" />
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/limitT"
+        android:text="My Limit is :"
+        android:layout_below="@+id/lt" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/limitT"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/limit"
+        android:layout_below="@+id/lt" />
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tt11"
+        android:layout_below="@+id/lt"
+        android:text="PRINCIPAL    :"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/principal"
+        android:layout_below="@+id/lt"
+        android:layout_toRightOf="@+id/tt11"
+        android:hint="principal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt11"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tt111"
+        android:text="PERIOD       :"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tt11"
+        android:layout_toRightOf="@+id/tt111"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spinnerTime"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tt11"
+        android:layout_toRightOf="@id/spinnerTime"
+        android:text="Years"/>
+    <Button
+        android:layout_below="@+id/tt111"
+        android:layout_marginTop="60dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnext"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundcorner"
+        android:text="Next"/>
+
+    <Button
+        android:id="@+id/checkhist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="568dp"
+        android:background="#3EF44336"
+        android:text="Check History"
+        android:textColor="#3F51B5" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Admindashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/Adminrecords"
+        android:title="Records"
+        android:icon="@drawable/ic_weigh"/>
+    <item
+        android:id="@+id/AdminaLoans"
+        android:title="Loans"
+        android:icon="@drawable/ic_money"/>
+    <item
+        android:id="@+id/Adminshop"
+        android:title="Shopping"
+        android:icon="@drawable/ic_shop"/>
+
+    <item
+        android:id="@+id/Adminmsg"
+        android:title="Messages"
+        android:icon="@drawable/ic_message"/>
+
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mpesa">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="70dp"
+        android:layout_height="450dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Item :"
+            android:textColor="#000000"
+            android:id="@+id/mpesaname"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mpesaname"
+            android:hint="name"
+            android:id="@+id/mpesanam"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mpesacost"
+            android:text="Cost "
+            android:textColor="#000000"
+            android:layout_below="@+id/mpesaname"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mpesacost"
+            android:id="@+id/mpesacos"
+            android:hint="cost"
+            android:layout_below="@+id/mpesaname"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mpesaquantity"
+            android:layout_marginTop="10dp"
+            android:text="quantity"
+            android:textColor="#000000"
+            android:layout_below="@+id/mpesacost"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mpesaquantit"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/mpesaquantity"
+            android:hint="quantity"
+            android:layout_below="@+id/mpesacost"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mpesacount"
+            android:layout_marginTop="27dp"
+            android:text="No of items"
+            android:textColor="#000000"
+            android:layout_below="@+id/mpesaquantity"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mpesacoun"
+            android:layout_marginTop="10dp"
+            android:hint="how many items"
+            android:layout_toRightOf="@+id/mpesacount"
+            android:layout_below="@+id/mpesaquantity"/>
+
+        <Button
+            android:id="@+id/mpay"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/mpesacoun"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/roundcorner"
+            android:text="LIPA NA MPESA" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    tools:context=".adapters.viewsalesadapter">
+    <TextView
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:hint="receipt"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/receipt"/>
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:hint="buyer name"
+        android:id="@+id/buyer"
+        android:layout_toRightOf="@+id/receipt" />
+    <TextView
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:hint="CAN fertilizer"
+        android:id="@+id/item"
+        android:layout_toRightOf="@+id/buyer" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="bags"
+        android:id="@+id/bags"
+        android:layout_toRightOf="@+id/item" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cost"
+        android:id="@+id/cost"
+        android:layout_toRightOf="@+id/bags"/>
+</RelativeLayout>

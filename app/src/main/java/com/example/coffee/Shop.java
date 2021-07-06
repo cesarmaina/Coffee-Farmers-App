@@ -1,0 +1,108 @@
+package com.example.coffee;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+
+import com.example.coffee.fragments.ChemicalsFrag;
+import com.example.coffee.fragments.FertilizerFrag;
+import com.example.coffee.fragments.Products;
+import com.example.coffee.fragments.Sell;
+import com.example.coffee.fragments.ToolsFrag;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.tabs.TabLayout;
+
+import java.util.ArrayList;
+
+public class Shop extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_shop);
+        BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_nav);
+        bottomNavigationView.setSelectedItemId(R.id.shop);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId())
+                {
+                    case R.id.shop:
+                        return true;
+                    case R.id.records:
+                        Intent record=new Intent(getApplicationContext(), userrecords.class);
+                        overridePendingTransition(0,0);
+                        startActivity(record);
+                        finish();
+                        return true;
+                    case R.id.loan:
+                        Intent loan=new Intent(getApplicationContext(), loan.class);
+                        overridePendingTransition(0,0);
+                        startActivity(loan);
+                        finish();
+                        return true;
+                    case R.id.dashboard:
+                        Intent shop=new Intent(getApplicationContext(), userDashboard.class);
+                        overridePendingTransition(0,0);
+                        startActivity(shop);
+                        finish();
+                        return true;
+                    case R.id.messageactivity:
+                        Intent message=new Intent(getApplicationContext(), userChatDashboard.class);
+                        overridePendingTransition(0,0);
+                        startActivity(message);
+                        finish();
+                        return true;
+
+                }
+                return false;
+            }
+        });
+        ViewPager viewPager=findViewById(R.id.buyviewpager);
+        TabLayout tabLayout=findViewById(R.id.buytablayout);
+
+        Shop.ViewPagerAdapter viewPagerAdapter=new Shop.ViewPagerAdapter(getSupportFragmentManager());
+        viewPagerAdapter.addFragment(new ToolsFrag(),"Tools");
+        viewPagerAdapter.addFragment(new FertilizerFrag(),"Fertilizer");
+        viewPagerAdapter.addFragment(new ChemicalsFrag(),"Chemicals");
+
+        viewPager.setAdapter(viewPagerAdapter);
+        tabLayout.setupWithViewPager(viewPager);
+    }
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private ArrayList<Fragment> fragments;
+        private ArrayList<String>titles;
+
+        ViewPagerAdapter(FragmentManager fm){
+            super(fm);
+            this.fragments=new ArrayList<>();
+            this.titles=new ArrayList<>();
+
+        }
+        @Override
+        public Fragment getItem(int position) {
+            return fragments.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return fragments.size();
+        }
+        public void addFragment(Fragment fragment, String title){
+            fragments.add(fragment);
+            titles.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return  titles.get(position);
+        }
+    }
+}

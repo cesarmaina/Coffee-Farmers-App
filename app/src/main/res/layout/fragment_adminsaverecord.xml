@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Adminsaverecord">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="70dp"
+        android:padding="40dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Farmer id:"
+                android:textColor="#000000"
+                android:id="@+id/fid"/>
+            <EditText
+                android:id="@+id/farmer"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="farmer's id" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="39dp"
+                android:text="Grade 1:"
+                android:textColor="#000000"
+                android:id="@+id/gg1"/>
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="cherry grade 1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="39dp"
+                android:text="Grade 2:"
+                android:textColor="#000000"
+                android:id="@+id/gg2"/>
+
+            <EditText
+                android:id="@+id/g2amount"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="cherry grade 2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="39dp"
+                android:textColor="#000000"
+                android:text="Mbuni:"
+                android:id="@+id/mm1"/>
+
+            <EditText
+                android:id="@+id/mbamount"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="mbuni"
+                android:text="0" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/record"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:background="#8D03A9F4"
+            android:text="Save Record"
+            android:textColor="#F44336" />
+    </LinearLayout>
+
+</RelativeLayout>

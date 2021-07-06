@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Messages">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/msgbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/msgimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/account1" />
+
+        <TextView
+            android:id="@+id/msg_rcv"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_toEndOf="@+id/msgimg"
+            android:layout_toRightOf="@+id/msgimg"
+            android:paddingLeft="20dp"
+            android:text="benson kimani mukuria"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/phonecall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_phone" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/msgbar"
+        android:layout_above="@+id/bottom"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type message..."
+            android:layout_centerVertical="true"
+            android:id="@+id/msg"
+            android:layout_toLeftOf="@+id/btn_send"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_send"/>
+    </RelativeLayout>
+
+</RelativeLayout>

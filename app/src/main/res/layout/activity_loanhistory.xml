@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userLoanHistory">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/date1"
+            android:text="Date"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/date1"
+            android:id="@+id/amount1"
+            android:text="Amount"/>
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/amount1"
+            android:id="@+id/time1"
+            android:text="Time"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/time1"
+            android:text="Status" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loanhistoryrecy"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/approverecyc"
+            android:layout_below="@+id/loanhistoryrecy"/>
+    </RelativeLayout>
+
+</RelativeLayout>

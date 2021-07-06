@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="#1600BCD4"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:id="@+id/loanmaill"
+            android:layout_marginLeft="5dp"
+            android:text="Email:"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/loanmail"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:layout_toRightOf="@id/loanmaill"
+            android:layout_marginLeft="2dp"
+            android:hint="email"
+            android:textColor="#2196F3" />
+        <TextView
+            android:id="@+id/loanamountt"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/loanmail"
+            android:text="Total Pay"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/loanamount"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/loanamountt"
+            android:layout_below="@+id/loanmail"
+            android:hint="amount"
+            android:textColor="#2196F3" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/roundcorner"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Check Details"
+            android:id="@+id/check"/>
+    </RelativeLayout>
+
+</RelativeLayout>

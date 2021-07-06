@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".adapters.ApproveOrDeny">
+
+    <RelativeLayout
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="#8F03A9F4">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/name"
+            android:text="Name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Email"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/mail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/mail"
+            android:text="Email"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/cid"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Coffee ID"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/cid1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cid"
+            android:text="Coffee ID"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_below="@+id/v1"
+        android:layout_marginTop="5dp"
+        android:background="#8600BCD4">
+
+        <TextView
+            android:id="@+id/pr"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="principal :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/pr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pr"
+            android:hint="principal :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tr"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Period :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tr"
+            android:hint="Period :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Ir"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tr1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Interest p.a :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Ir1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/Ir"
+            android:hint="Interest p.a :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/ttr"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Ir"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Total Payment:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/ttr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Ir"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ttr"
+            android:hint="Total Payment"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/v3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/v2"
+        android:layout_marginTop="5dp"
+        android:background="#8800BCD4">
+
+        <TextView
+            android:id="@+id/erecords"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Farmer total records"
+            android:textColor="#F44336" />
+
+        <TextView
+            android:id="@+id/trecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/erecords"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalrecord"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trecords"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Total records"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalrecords"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trecords"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/totalrecord"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/erevenu"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalrecord"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Farmer estimated revenue:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/erevenue"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalrecord"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/erevenu"
+            android:hint="Farmer estimated revenue:"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/v4"
+        android:background="#8800BCD4"
+        android:layout_below="@id/v3"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:text="Estimated Time to repay loan"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:id="@+id/times"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="7 years"
+            android:id="@+id/time1"
+            android:layout_toRightOf="@id/times"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="msg"
+        android:id="@+id/msg1"
+        android:textColor="#000000"
+        android:layout_below="@+id/v4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/v5"
+        android:layout_below="@+id/v4"
+        android:layout_marginTop="40dp"
+        android:padding="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/roundcorner"
+            android:text="Back"
+            android:textColor="#000000"
+            android:id="@+id/btnback"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/btnback"
+            android:background="@drawable/roundcorner"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            android:text="APPROVE"
+            android:id="@+id/btnapprove"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/btnapprove"
+            android:id="@+id/btndeny"
+            android:background="@drawable/roundcorner"
+            android:text="DENY"
+            android:textColor="#000000"
+            android:layout_marginLeft="30dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.addnews">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l1"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/R11"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="200dp"
+                android:text="Add Photo"
+                android:textColor="#F44336" />
+
+            <ImageView
+                android:id="@+id/uploadimg"
+                android:layout_width="286dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_addimage" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/newsfeed"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_below="@+id/R11"
+            android:background="#0F00BCD4"
+            android:hint="Add a description here..." />
+
+        <Button
+            android:id="@+id/addnews"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8D03A9F4"
+            android:layout_below="@+id/newsfeed"
+            android:text="Add Story"
+            android:textColor="#F44336" />
+    </RelativeLayout>
+
+</FrameLayout>

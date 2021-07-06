@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:layout_marginTop="10dp"
+    tools:context=".repayment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOAN AMOUNT:"
+        android:id="@+id/loan1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOAN AMOUNT"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/loan1"
+        android:id="@+id/loan11"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan1"
+        android:id="@+id/loan12"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/loan2"
+        android:id="@+id/loan122"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annual Installment:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan12"
+        android:id="@+id/loan2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOAN AMOUNT"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan122"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/loan2"
+        android:id="@+id/loan22"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expected Revenue:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan2"
+        android:id="@+id/loan3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOAN AMOUNT"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/loan3"
+        android:id="@+id/loan33"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expected Payout:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan3"
+        android:id="@+id/loan4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOAN AMOUNT"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan3"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/loan4"
+        android:id="@+id/loan44"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOAN AMOUNT"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loan44"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="serif-monospace"
+        android:textSize="20dp"
+       android:layout_centerHorizontal="true"
+        android:id="@+id/status"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/back"
+        android:layout_below="@id/status"
+        android:layout_marginTop="50dp"
+        android:text="back"
+        android:background="@drawable/roundcorner"/>
+
+</RelativeLayout>

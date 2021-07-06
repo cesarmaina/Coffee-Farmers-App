@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    tools:context=".adapters.RecordsAdapter">
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade1"
+        android:layout_marginLeft="3dp"/>
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/grade1"
+        android:id="@+id/grade2"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="55dp"
+        android:layout_toRightOf="@id/grade2"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade3"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/grade3"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"/>
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TotalRecords">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/rr11"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/idcoffee"
+            android:text="Farmer ID"
+            android:textColor="#3F51B5"/>
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/farmer"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/idcoffee"
+            android:text="Farmer Name"
+            android:textColor="#3F51B5"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/grade11"
+            android:layout_toRightOf="@+id/farmer"
+            android:textColor="#3F51B5"
+            android:layout_marginLeft="4dp"
+            android:text="grade 1"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/grade12"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/grade11"
+            android:textColor="#3F51B5"
+            android:text="grade2"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/grade13"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/grade12"
+            android:textColor="#3F51B5"
+            android:text="Mbuni"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_below="@+id/rr11"
+        android:id="@+id/totalrecordsrecycler"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalrecordsrecycler"
+        android:textAlignment="center"
+        android:textColor="#00BCD4"
+        android:text="TOTALS"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalsysrecs"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/totalrecordsrecycler">
+
+        <TextView
+            android:id="@+id/gg1"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Grade 1:"
+            android:textColor="#F44336" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="Grade 1:"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/gg1"
+            android:id="@+id/gg11"/>
+
+        <TextView
+            android:id="@+id/gg2"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gg11"
+            android:text="Grade 2:"
+            android:textColor="#F44336" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="Grade 2:"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/gg2"
+            android:id="@+id/gg22"/>
+
+        <TextView
+            android:id="@+id/gg3"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gg22"
+            android:text="Mbuni:"
+            android:textColor="#F44336" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="Mbuni:"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/gg3"
+            android:id="@+id/gg33"/>
+
+
+        <TextView
+            android:id="@+id/tr1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gg1"
+            android:layout_marginTop="5dp"
+            android:text="Total Records :"
+            android:textColor="#F44336" />
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gg1"
+            android:layout_toRightOf="@+id/tr1"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:id="@+id/tr11"/>
+
+        <TextView
+            android:id="@+id/er1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tr1"
+            android:layout_marginTop="5dp"
+            android:text="Estimated Revenue :"
+            android:textColor="#F44336" />
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tr1"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/tr1"
+            android:layout_marginTop="5dp"
+            android:id="@+id/er11"/>
+    </RelativeLayout>
+
+</RelativeLayout>
